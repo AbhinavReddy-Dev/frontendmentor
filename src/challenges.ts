@@ -6,7 +6,7 @@ export const challenges = [
     href: "/results-summary-comp",
     title: "Results Summary Component",
     body: "A component that displays a summary of the results of a test.",
-    status: "In-progress",
+    status: "Finished",
     tags: ["html", "css", "tailwindcss"],
   },
 ];
