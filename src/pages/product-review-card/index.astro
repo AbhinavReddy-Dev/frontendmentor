@@ -41,22 +41,18 @@ const title = "Product Review Card";
     <Breadcrumb content={{ title }} />
 
     <main
-      role="main"
       class="m-auto mx-6 grid max-h-[750px] grid-cols-1 grid-rows-[1fr_1.7fr] rounded-xl font-montserrat shadow-sm sm:max-h-[600px] sm:grid-cols-2 sm:grid-rows-1 md:max-w-screen-sm">
       <img
-        role="img"
         class="sm:rounded-l-b-none hidden overflow-hidden sm:block sm:rounded-l-xl sm:rounded-tr-none"
         src="/product-review-card/image-product-desktop.jpg"
         alt="product image"
       />
       <img
-        role="img"
         class="block overflow-hidden rounded-t-xl sm:hidden"
         src="/product-review-card/image-product-mobile.jpg"
         alt="product image"
       />
       <section
-        role="contentinfo"
         class="flex flex-col justify-between rounded-b-xl bg-white p-5 sm:rounded-r-xl sm:rounded-bl-none sm:p-8">
         <p class="text-sm uppercase tracking-[6px] text-gray-500">Perfume</p>
         <h1 class="font-fraunces text-3xl font-bold sm:text-4xl">
@@ -77,7 +73,7 @@ const title = "Product Review Card";
             alt="shopping cart icon"
             src="/product-review-card/icon-cart.svg"
           />
-          <p>Add to Cart</p>
+          <span>Add to Cart</span>
         </button>
       </section>
     </main>
