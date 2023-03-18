@@ -3,6 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 
 import { challenges } from "../challenges";
+
+const sortedChallenges = challenges.sort((a, b) => {
+  return Number(b.id) - Number(a.id);
+});
 ---
 
 <Layout title="Welcome to Astro.">
@@ -23,7 +27,7 @@ import { challenges } from "../challenges";
     </p>
     <ul role="list" class="link-card">
       {
-        challenges.map((challenge) => (
+        sortedChallenges.map((challenge) => (
           <Card
             id={challenge.id}
             href={challenge.href}
@@ -32,6 +36,7 @@ import { challenges } from "../challenges";
             status={challenge.status}
             tags={challenge.tags}
             sitelink={challenge.sitelink}
+            date={challenge.date}
           />
         ))
       }
