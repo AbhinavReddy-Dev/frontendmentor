@@ -17,7 +17,7 @@ export const challenges = [
     href: "/product-review-card",
     title: "Product Review Card",
     body: "A card that displays the details of a perfume.",
-    status: "In-progress",
+    status: "Finished",
     tags: ["html", "css", "Astro", "tailwindcss"],
     date: "03-17-2023",
   },
