@@ -40,19 +40,23 @@ const title = "Product Review Card";
     class="flex h-screen w-screen flex-col items-center justify-center bg-amber-50">
     <Breadcrumb content={{ title }} />
 
-    <div
+    <main
+      role="main"
       class="m-auto mx-6 grid max-h-[750px] grid-cols-1 grid-rows-[1fr_1.7fr] rounded-xl font-montserrat shadow-sm sm:max-h-[600px] sm:grid-cols-2 sm:grid-rows-1 md:max-w-screen-sm">
       <img
+        role="img"
         class="sm:rounded-l-b-none hidden overflow-hidden sm:block sm:rounded-l-xl sm:rounded-tr-none"
         src="/product-review-card/image-product-desktop.jpg"
         alt="product image"
       />
       <img
+        role="img"
         class="block overflow-hidden rounded-t-xl sm:hidden"
         src="/product-review-card/image-product-mobile.jpg"
         alt="product image"
       />
-      <div
+      <section
+        role="contentinfo"
         class="flex flex-col justify-between rounded-b-xl bg-white p-5 sm:rounded-r-xl sm:rounded-bl-none sm:p-8">
         <p class="text-sm uppercase tracking-[6px] text-gray-500">Perfume</p>
         <h1 class="font-fraunces text-3xl font-bold sm:text-4xl">
@@ -67,19 +71,23 @@ const title = "Product Review Card";
           <p class="text-gray-500 line-through">$169.99</p>
         </div>
         <button
+          role="button"
           class="flex items-center justify-center gap-2 rounded-xl bg-emerald-700 py-3 text-white hover:bg-emerald-900">
-          <img src="/product-review-card/icon-cart.svg" />
-          <span> Add to Cart</span>
+          <img
+            alt="shopping cart icon"
+            src="/product-review-card/icon-cart.svg"
+          />
+          <p>Add to Cart</p>
         </button>
-      </div>
-    </div>
-    <div class="attribution w-full bg-gray-100 text-lg">
+      </section>
+    </main>
+    <footer class="attribution w-full bg-gray-100 text-lg">
       Challenge by <a
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank">Frontend Mentor</a
       >. Coded by <a target="_blank" href="https://github.com/AbhinavReddy-Dev"
         >Abhinav R Merugu</a
       >.
-    </div>
+    </footer>
   </body>
 </html>
