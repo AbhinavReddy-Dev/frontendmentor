@@ -4,8 +4,10 @@ const {
 } = Astro.props;
 ---
 
-<nav aria-label="Breadcrumb" class="absolute top-8 left-8">
-  <ol role="list" class="flex items-center gap-1 text-sm text-gray-300">
+<nav
+  aria-label="Breadcrumb"
+  class="absolute top-8 left-8 rounded-md bg-gray-700 p-1 px-2">
+  <ol role="list" class="flex items-center gap-1 text-xs text-gray-300">
     <li>
       <a href="/" class="block transition hover:text-gray-400">
         <span class="sr-only"> Home</span>

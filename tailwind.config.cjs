@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         hanken: ["hanken"],
+        montserrat: ["montserrat"],
+        fraunces: ["fraunces"],
       },
     },
   },

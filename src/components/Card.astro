@@ -17,7 +17,7 @@ const statusStyle =
 ---
 
 <div
-  class="relative flex flex-col items-start justify-between rounded-xl border border-purple-100 bg-gray-900 p-4 text-white shadow-lg shadow-indigo-900 hover:shadow-none sm:p-6 lg:p-8">
+  class="relative mt-8 flex flex-col items-start justify-between rounded-xl border border-purple-100 bg-gray-900 p-4 text-white shadow-lg shadow-indigo-900 hover:shadow-none sm:p-6 lg:p-8">
   <span class={"rounded-full py-1 px-3 text-xs font-bold " + statusStyle}>
     <span class="sr-only">Status:</span>{status}
   </span>
@@ -37,7 +37,7 @@ const statusStyle =
       {
         tags.map((tag) => {
           return (
-            <span class="mt-2 mr-2 inline-flex items-center rounded-full bg-fuchsia-100 px-3 py-0.5 text-sm font-medium text-fuchsia-800">
+            <span class="mt-2 mr-2 inline-flex items-center rounded-full bg-fuchsia-50 px-3 py-0.5 text-xs font-medium text-fuchsia-800">
               {tag}
             </span>
           );
