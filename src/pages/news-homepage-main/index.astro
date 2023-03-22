@@ -47,14 +47,14 @@ import "./scss/main.scss";
       </div>
     </nav>
     <main class="hero-layout">
-      <section class="hero-section" style="background-color: cadetblue;">
-        <picture style="width: 100%; display: block;">
+      <section class="hero-section" style="">
+        <picture style="width: 100%;">
           <source
-            media="(max-width: 375px)"
+            media="(max-width: 575px)"
             srcset="/news-homepage-main/images/image-web-3-mobile.jpg"
           />
           <source
-            media="(min-width: 376px)"
+            media="(min-width: 576px)"
             srcset="/news-homepage-main/images/image-web-3-desktop.jpg"
           />
           <img
@@ -62,13 +62,17 @@ import "./scss/main.scss";
             alt="hero image"
           />
         </picture>
-        <h1>The Bright Future of Web 3.0?</h1>
-        <p>
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <button>Read more</button>
+        <div class="hero-content">
+          <h1>The Bright Future of Web 3.0?</h1>
+          <div class="hero-text">
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+            </p>
+            <button>Read more</button>
+          </div>
+        </div>
       </section>
       <aside class="hero-aside" style="background-color: aquamarine;">
         <a>
