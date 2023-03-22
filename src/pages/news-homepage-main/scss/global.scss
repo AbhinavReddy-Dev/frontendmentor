@@ -1,0 +1,35 @@
+$color-primary-orange: hsl(35, 77%, 62%);
+$color-primary-red: hsl(5, 85%, 63%);
+$color-off-white: hsl(36, 100%, 99%);
+$color-grayish-blue: hsl(233, 8%, 79%);
+$color-dark-grayish-blue: hsl(236, 13%, 42%);
+$color-very-dark-blue: hsl(240, 100%, 5%);
+$font-size-p: 15px;
+$font-family: "Inter", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: $font-family;
+  font-size: $font-size-p;
+  color: $color-dark-grayish-blue;
+  background-color: $color-off-white;
+  padding: 0 2rem;
+  @media screen and (max-width: 575px) {
+    width: 100vw;
+    margin: 0 1rem;
+    padding: 0 1rem;
+  }
+}
+.attribution {
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

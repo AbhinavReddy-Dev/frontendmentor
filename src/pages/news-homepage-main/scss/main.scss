@@ -1,0 +1,54 @@
+@import "./global.scss";
+
+.hero-layout {
+  display: grid;
+  max-height: fit-content;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+  @media screen and (max-width: 575px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+.hero-section {
+  //   grid-area: hero-section;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  @media screen and (max-width: 575px) {
+    width: 100%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+}
+
+.hero-aside {
+  //   grid-area: hero-aside;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  @media screen and (max-width: 575px) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.hero-extra {
+  //   grid-area: hero-extra;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  @media screen and (max-width: 575px) {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}

@@ -25,10 +25,10 @@ export const challenges = [
     id: "3",
     sitelink:
       "https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl",
-    href: "/news-homepage",
+    href: "/news-homepage-main",
     title: "News Homepage",
     body: "A homepage that displays the latest news.",
-    status: "In Progress",
+    status: "In-Progress",
     tags: ["html", "sass", "Astro"],
     date: "03-20-2023",
   },
