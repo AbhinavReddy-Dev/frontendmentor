@@ -2,6 +2,7 @@
 import "./scss/global.scss";
 import "./scss/navigation.scss";
 import "./scss/main.scss";
+import Breadcrumb from "../../components/Breadcrumb.astro";
 ---
 
 <!DOCTYPE html>
@@ -22,6 +23,7 @@ import "./scss/main.scss";
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
+    <Breadcrumb content={{ title: "News Hompage" }} />
     <nav class="navigation">
       <div class="logo">
         <img src="/news-homepage-main/images/logo.svg" alt="logo" />
@@ -33,7 +35,7 @@ import "./scss/main.scss";
         <a class="nav-link" href="#">Trending</a>
         <a class="nav-link" href="#">Categories</a>
       </div>
-      <div class="menu-icon" style="display: none">
+      <div class="menu-icon" onclick="toggleMenu()">
         <img
           alt="menu"
           id="menu-open"
@@ -74,43 +76,69 @@ import "./scss/main.scss";
           </div>
         </div>
       </section>
-      <aside class="hero-aside" style="background-color: aquamarine;">
-        <a>
-          <h2>New</h2>
-          <h3>Hydrogen VS Electric Cars</h3>
+      <aside class="hero-aside">
+        <h2>New</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <h3>Hydrogen VS Electric Cars</h3>
 
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        </a>
-        <a>
-          <h3>The Downsides of AI Artistry</h3>
-          <p>
-            What are the possible adverse effects of on-demand AI image
-            generation?
-          </p>
-        </a>
-        <a>
-          <h3>Is VC Funding Drying Up?</h3>
-          <p>
-            Private funding by VC firms is down 50% YOY. We take a look at what
-            that means.
-          </p></a
-        >
+              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>The Downsides of AI Artistry</h3>
+              <p>
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <h3>Is VC Funding Drying Up?</h3>
+              <p>
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p></a
+            >
+          </li>
+        </ul>
       </aside>
-      <div class="hero-extra" style="background-color: darksalmon;">
+      <div class="hero-extra">
         <div>
-          <span> 01</span>
-          <h4>Reviving Retro PCs</h4>
-          <p>What happens when old PCs are given modern upgrades?</p>
+          <img
+            src="/news-homepage-main/images/image-retro-pcs.jpg"
+            alt="extra image"
+          />
+          <div class="extra-content">
+            <h3>01</h3>
+            <a href="#">Reviving Retro PCs</a>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
         </div>
         <div>
-          <span>02</span>
-          <h4>Top 10 Laptops of 2022</h4>
-          <p>Our best picks for various needs and budgets.</p>
+          <img
+            src="/news-homepage-main/images/image-top-laptops.jpg"
+            alt="extra image"
+          />
+          <div class="extra-content">
+            <h3>02</h3>
+            <a href="#">Top 10 Laptops of 2022</a>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
         </div>
         <div>
-          <span>03</span>
-          <h4>The Growth of Gaming</h4>
-          <p>How the pandemic has sparked fresh opportunities.</p>
+          <img
+            src="/news-homepage-main/images/image-gaming-growth.jpg"
+            alt="extra image"
+          />
+          <div class="extra-content">
+            <h3>03</h3>
+            <a href="#">The Growth of Gaming</a>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
         </div>
       </div>
     </main>
@@ -118,7 +146,28 @@ import "./scss/main.scss";
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://www.github.com/AbhinavReddy-Dev"
+        >Abhinav Reddy</a
+      >.
     </footer>
+
+    <script is:inline>
+      let menuOpen = false;
+      const menuIcon = document.getElementById("menu-open");
+      const menuClose = document.getElementById("menu-close");
+      console.log(menuIcon);
+
+      function toggleMenu() {
+        if (!menuOpen) {
+          menuIcon.style.display = "none";
+          menuClose.style.display = "block";
+          menuOpen = true;
+        } else {
+          menuIcon.style.display = "block";
+          menuClose.style.display = "none";
+          menuOpen = false;
+        }
+      }
+    </script>
   </body>
 </html>

@@ -11,6 +11,21 @@
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 0;
+
+  .menu-icon {
+    display: none;
+    @media screen and (max-width: 575px) {
+      display: block;
+      cursor: pointer;
+      #menu-open {
+        display: block;
+      }
+      #menu-close {
+        display: none;
+      }
+    }
+  }
+
   @media screen and (max-width: 575px) {
     width: 100%;
     padding: 1rem 0;

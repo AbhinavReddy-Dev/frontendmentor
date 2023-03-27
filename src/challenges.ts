@@ -28,8 +28,8 @@ export const challenges = [
     href: "/news-homepage-main",
     title: "News Homepage",
     body: "A homepage that displays the latest news.",
-    status: "In-Progress",
-    tags: ["html", "sass", "Astro"],
+    status: "Finished",
+    tags: ["html", "scss", "Astro"],
     date: "03-20-2023",
   },
 ];

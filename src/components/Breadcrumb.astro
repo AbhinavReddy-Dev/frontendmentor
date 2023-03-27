@@ -4,9 +4,9 @@ const {
 } = Astro.props;
 ---
 
-<nav
+<div
   aria-label="Breadcrumb"
-  class="absolute top-8 left-8 flex rounded-md bg-gray-700 py-1 px-2 text-center text-white">
+  class="fixed bottom-5 left-5 z-50 flex rounded-md bg-gray-700 py-1 px-2 text-center text-white">
   <a href="/" class="py-auto block transition hover:text-gray-400">
     <span class="sr-only"> Home</span>
     <svg
@@ -36,4 +36,4 @@ const {
   </svg>
 
   <p class="block text-xs transition">{title}</p>
-</nav>
+</div>
