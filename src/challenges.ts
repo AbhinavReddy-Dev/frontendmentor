@@ -32,4 +32,15 @@ export const challenges = [
     tags: ["html", "scss", "Astro"],
     date: "03-20-2023",
   },
+  {
+    id: "4",
+    sitelink:
+      "https://www.frontendmentor.io/challenges/notifications-page-DqK5QAmKbC",
+    href: "/notifications-page-main",
+    title: "Notifications Page Main",
+    body: "A page that displays the notifications of a user.",
+    status: "In-Progress",
+    tags: ["html", "TypeScript", "chakra-ui", "Astro", "react"],
+    date: "03-29-2023",
+  },
 ];

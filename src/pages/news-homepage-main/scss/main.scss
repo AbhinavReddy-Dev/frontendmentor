@@ -168,6 +168,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
+  margin-top: 2rem;
   // flex-wrap: wrap;
   height: fit-content;
   > div {
@@ -205,6 +206,7 @@
     // flex-direction: column;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    margin-top: 1rem;
     .extra-content {
       justify-content: space-between;
     }
