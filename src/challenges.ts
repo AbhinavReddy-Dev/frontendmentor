@@ -7,7 +7,7 @@ export const challenges = [
     title: "Results Summary Component",
     body: "A component that displays a summary of the results of a test.",
     status: "Finished",
-    tags: ["html", "css", "Astro", "tailwindcss"],
+    tags: ["HTML", "CSS", "Astro", "tailwindCSS"],
     date: "03-15-2023",
   },
   {
@@ -18,7 +18,7 @@ export const challenges = [
     title: "Product Review Card",
     body: "A card that displays the details of a perfume.",
     status: "Finished",
-    tags: ["html", "css", "Astro", "tailwindcss"],
+    tags: ["HTML", "CSS", "Astro", "tailwindCSS"],
     date: "03-17-2023",
   },
   {
@@ -29,7 +29,7 @@ export const challenges = [
     title: "News Homepage",
     body: "A homepage that displays the latest news.",
     status: "Finished",
-    tags: ["html", "scss", "Astro"],
+    tags: ["HTML", "SCSS", "Astro"],
     date: "03-20-2023",
   },
   {
@@ -40,7 +40,7 @@ export const challenges = [
     title: "Notifications Page Main",
     body: "A page that displays the notifications of a user.",
     status: "In-Progress",
-    tags: ["html", "TypeScript", "chakra-ui", "Astro", "react"],
+    tags: ["HTML", "TypeScript", "Astro", "React"],
     date: "03-29-2023",
   },
 ];
